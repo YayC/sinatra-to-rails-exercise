@@ -1,0 +1,7 @@
+<ul>
+<% unless @articles.empty? %>
+	<% @articles.each do |article| %>
+		<li><%= render 'shared/article', article: article %></li>
+	<% end %>
+<% end %>
+</ul>

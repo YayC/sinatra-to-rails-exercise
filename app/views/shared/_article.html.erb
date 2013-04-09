@@ -1,0 +1,9 @@
+<article>
+  <h1><%= article.category.content %></h1>
+  <h3><%= article.title %></h3>
+  <p><% article.tags.each do |tag| %></p>
+    <p><%= tag.content %></p>
+   <% end %>
+  <hr/>
+  <p><%= article.description %></p>
+</article>
